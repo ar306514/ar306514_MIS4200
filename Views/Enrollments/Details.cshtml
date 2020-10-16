@@ -1,0 +1,42 @@
+﻿@model ar306514_MIS4200.Models.Enrollments
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Enrollments</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Courses.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Courses.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Students.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Students.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.grade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.grade)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.enrollmentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
